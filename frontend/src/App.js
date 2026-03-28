@@ -23,7 +23,7 @@ function App() {
     formData.append("jd_text", jdText);
 
     try {
-      const res = await axios.post("http://127.0.0.1:8000/match", formData, {
+      const res = await axios.post("https://resume-jd-matcher-m05x.onrender.com/match", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       setResult(res.data);

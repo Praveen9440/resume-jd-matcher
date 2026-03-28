@@ -23,7 +23,7 @@ function App() {
     formData.append("jd_text", jdText);
 
     try {
-      const res = await axios.post("https://resume-jd-matcher-m05x.onrender.com/match", formData, {
+      const res = await axios.post("https://praveen5001-resume-jd-matcher.hf.space/match", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       setResult(res.data);
